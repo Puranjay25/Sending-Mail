@@ -3,10 +3,12 @@
 ## Pre Requisites
 
 **1) Python**
+
   Install python on your machine by following the intructions [from here](https://www.python.org/getit/)
   
 **2) Python flask**
-    For installing flask module simply open the command promot/terminal and run 
+
+   For installing flask module simply open the command promot/terminal and run 
     
     > pip install flask
   
@@ -27,6 +29,16 @@ For any other platform [visit here](https://dev.mysql.com/doc/mysql-installation
 Also install MySQLdb by running
 
     > apt-get install python-mysqldb
+    
+Run mysql on your machine and follow these steps:
+
+1) Create a database
+2) Use that database
+3) Run the following two commands-
+
+        > create table users(username varchar(50), email varchar(40));
+        
+        > create table userinformation(firstname varchar(20), lastname varchar(20), email varchar(40), username varchar(50), password varchar(50), confirmpassword varchar(50));
 
 ## Changes to be made in file
 
