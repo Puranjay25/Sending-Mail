@@ -24,7 +24,7 @@ def index():
 		cpwd=request.form.get("confirm-password",False)
 		a,b=connect()
 		check=b.execute("select * from userinformation where email='%s' or username='%s'"%(emailid,uname))
-		if check==0:
+		if check==0 and pwd==cpwd:
 			b.execute("insert into userinformation(firstname,lastname,email,username,password,confirmpassword) values(%s,%s,%s,%s,%s,%s)",(fname,lname
 				,emailid,uname,pwd,cpwd))
 			b.execute("insert into users(username,email) values(%s,%s)",(uname,emailid))
@@ -36,8 +36,10 @@ def index():
 			mail.send(msg)
 			
 			
-		else:
+		elif check!=0:
 			flash('Username or Email already exisits..Try using another one')
+		elif pwd!=cpwd:
+			flash('Password and Confirm Password must be same')
 	return render_template('index.html')
 
 if __name__=='__main__':
