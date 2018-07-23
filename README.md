@@ -48,9 +48,9 @@ Run mysql on your machine and follow these steps:
  
 **2) app.py file**
 
-    In line **#11** and line **#34**(in assignment to *sender*) write your own email address through which you want to send the email
+    In line #11 and line #34(in assignment to sender) write your own email address through which you want to send the email
     
-    In line **#12** write password for your mail
+    In line #12 write password for your mail
     
 ## Intructions to run the file
 
