@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<title>
+			Welcome!!
+		</title>
+	</head>
+	<body>
+		{% for m in get_flashed_messages() %}
+			<p style="color:red">{{m}}</p>
+		{% endfor %}
+		<form method="post">
+			<div class="container">
+				<div class="form-group">
+					<label class="control-label" for="firstname">First Name</label>
+					<input name="firstname" class="form-control" type="text" placeholder="Enter Your First Name"/>
+				</div>
+
+				<div class="form-group">
+					<label for="lastname" clas="control-label">Last Name</label>
+					<input name="lastname" class="form-control" type="text" placeholder="Enter Your Last Name"/>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="control-label">Email</label>
+					<input name="email" type="text" placeholder="Enter Your Email" class="form-control"/>
+				</div>
+
+				<div class="form-group">
+					<label for="username" class="control-label">Username</label>
+					<input name="username" type="text" class="form-control" placeholder="Enter Your desired User Name"/>
+				</div>
+
+				<div class="form-group">
+					<label for="password" class="control-label">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Choose Password"/>
+				</div>
+
+				<div class="form-group">
+					<label for="confirm-password" class="control-label">Confirm Password</label>
+					<input class="form-control" name="confirm-password" type="password" placeholder="Confirm Password"/>
+				</div>
+
+				<input type="submit" class="btn btn-info" placeholder="Confirm">
+
+			</div>
+		</form>
+	</body>
+</html>
