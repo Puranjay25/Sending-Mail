@@ -51,6 +51,13 @@ Run mysql on your machine and follow these steps:
     In line **#11** and line **#34**(in assignment to *sender*) write your own email address through which you want to send the email
     
     In line **#12** write password for your mail
+    
+## Intructions to run the file
+
+1) Go to the directory of the project.
+2) Type the following command in terminal/command prompt
+  
+         python app.py 
 
 # Note
 Gmail doesn't allow you to send mail from unknown apps. So you wan't be able to send mails until and unless **"Allow less secure apps"** is set to **ON** from your gmail account through which you are sending mail. This feature can be turned on from settings
