@@ -31,10 +31,13 @@ Also install MySQLdb by running
 ## Changes to be made in file
 
 **1) db.py file**
+
     In line **#4** write your own **database name** and **password** of your database
  
 **2) app.py file**
+
     In line **#11** and line **#34**(in assignment to *sender*) write your own email address through which you want to send the email
+    
     In line **#12** write password for your mail
 
 # Note
