@@ -44,7 +44,7 @@ Run mysql on your machine and follow these steps:
 
 **1) db.py file**
 
-    In line **#4** write your own **database name** and **password** of your database
+    In line #4 write your own database name and password of your database
  
 **2) app.py file**
 
@@ -60,4 +60,4 @@ Run mysql on your machine and follow these steps:
          python app.py 
 
 # Note
-Gmail doesn't allow you to send mail from unknown apps. So you wan't be able to send mails until and unless **"Allow less secure apps"** is set to **ON** from your gmail account through which you are sending mail. This feature can be turned on from settings
+Gmail doesn't allow you to send mail from unknown apps. So you won't be able to send mails until and unless **"Allow less secure apps"** is set to **ON** from your gmail account through which you are sending mail. This feature can be turned on from settings
